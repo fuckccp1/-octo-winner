@@ -1,0 +1,10 @@
+ 1、打开finalshell，点左上角文件夹图标，
+2、进入后建立新ssh连接
+3、认证方法选 公钥
+4、私钥选择从aws下载的pem文件
+5、用户名写aws实例里连接第一项里有
+6、高级选项根据情况选，
+7、确定就行了
+
+8、运行此命令，将命令行里的root换成aws实例的用户名即可不需要root用户。
+wget -P /root -N --no-check-certificate https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh && chmod 700 /root/install.sh && /root/install.sh 
